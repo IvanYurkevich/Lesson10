@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+// Colors=========================
+@bgcolor: #F06C64;
+@input: #D6564F;
+@btnColor: #FBC65F;
+@textColor: #F0D8D9;
+@textColor2:#666D89;
+@bgDark: #2D303A;
+
+// Fonts=========================
+@font1: 12px;
+@font2: 18px;
+@fw900: 900;
+@fw300: 300;
+
+.container {
+    width: 1020px;
+    font-family:  'Lato', sans-serif;
+    background-color: @bgcolor;
+    font-weight: @fw300;
+    font-size: @font2;
+    color: @textColor;
+}
+::placeholder{
+    color: @textColor;
+}
+h2 {
+    font-size: 30px;
+    font-weight: @fw900 ;
+}
+.form { 
+    height: 648px;
+    padding: 59px 40px 70px;
+}
+.form-area{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 35px;
+    button{
+        width: 136px;
+        height: 38px;
+        margin-top: 14px;
+        background-color: @btnColor;
+        color:@textColor2;
+        font-size: 14px;
+        border-radius: 5px;
+        border:none;
+        outline: none;
+        text-transform: uppercase;
+    }
+ 
+    form{
+        
+        width: 620px;
+        input {
+        display: block;
+        width: 100%;
+        background-color: @input;
+        height: 40px;
+        margin-bottom: 14px;
+        padding: 13px;
+        outline: none;
+        border: none;
+        color: @textColor;
+        font-size: @font1;
+        border-radius: 5px;
+        }
+        textarea{
+            background-color: @input;
+            width: 100%;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            padding: 13px;
+            font-size: @font1;
+            color: @textColor;
+        }
+    }
+    .contacts{
+        flex-grow: 1;
+        width: 300px;
+        margin-left: 20px;
+       
+        h3 {
+            font-size: @font2;
+        }
+        p{
+            font-size: @font1;
+        }
+        .adress {
+            margin-top: 20px;
+            a {
+            margin-left: 13px;
+            font-family: inherit;
+            font-size: @font1;
+            color: inherit;
+            text-decoration: none;
+        }
+        }
+    }
+}
+
+    
+.footer-end {
+    height: 72px;
+    background-color: @bgDark;
+    line-height: 72px; 
+    span {
+            margin-left: 40px;
+            font-weight: @fw900;
+            font-size: @font1;
+            color: @textColor2;
+        }
+    .icons {
+        float: right;
+        margin-right: 42px;
+       
+        i {
+            height: 22px;
+            width: 22px;
+            margin-left: 8px;
+            color: @textColor2;
+        }
+    }
+}
+
